@@ -1,0 +1,25 @@
+version: '2'
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: wp_charlesstemen
+      MYSQL_ROOT_PASSWORD: insecure
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: insecure
+
+  web:
+    build: .
+    depends_on:
+      - db
+    links:
+      - db:mysql
+    image: wordpress
+    volumes:
+      - '.:/var/www/html'
+    ports:
+      - "80:80"
+    environment:
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: insecure
+      WORDPRESS_DB_NAME: wp_charlesstemen

@@ -1,1 +1,1 @@
-# wp_charlesstemen
+# Wordpress Package for Charles Stemen

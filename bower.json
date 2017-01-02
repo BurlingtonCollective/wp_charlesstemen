@@ -1,0 +1,8 @@
+{
+  "name": "wp_charlesstemen",
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "requirejs": "^2.2.0",
+    "jquery": "^3.1.0"
+  }
+}
