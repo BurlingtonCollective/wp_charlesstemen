@@ -25,7 +25,7 @@ function create_project_post_type() {
         'public'             => true,
         'publicly_queryable' => true,
         'menu_position'      => 4,
-        'supports'           => array('title', 'editor'),
+        'supports'           => array('title', 'editor', 'thumbnail'),
         'has_archive'        => true,
         'show_ui'            => true,
         'capability_type'    => 'post',
