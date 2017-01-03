@@ -18,7 +18,12 @@ function bc_do_loop ()
                     </div>
                 </div>
                 <div class="col-sm-6 co-sm-pull-6 col-md-8 col-md-pull-4">
-
+                    <?php
+                    if (have_rows('block_sections')) {
+                        foreach (get_field('block_sections') as $blockIndex => $block) {
+                            include('lib/includes/layouts/' . $block['acf_fc_layout'] . '.php');
+                        }
+                    } ?>
                 </div>
             </div>
         </article>
