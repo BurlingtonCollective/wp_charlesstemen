@@ -44,6 +44,9 @@ function project_init() {
         array(
             'hierarchical' => true,
             'label'        => 'Project Categories',
+            'rewrite'      => array(
+                'slug' => 'project-category'
+            )
         )
     );
 }

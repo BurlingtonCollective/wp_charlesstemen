@@ -1,11 +1,15 @@
 <section class="block-image">
-    <?php if ($block['block_heading']) : ?>
-        <h2><?php echo $block['block_heading']; ?></h2>
-    <?php endif; ?>
-    <div class="wysiwyg-content">
-        <?php echo $block['block_copy']; ?>
-    </div>
     <?php
+    if ($block['block_heading']) : ?>
+        <h2><?php echo $block['block_heading']; ?></h2>
+        <?php
+    endif;
+    if ($block['block_copy']) : ?>
+        <div class="wysiwyg-content">
+            <?php echo $block['block_copy']; ?>
+        </div>
+        <?php
+    endif;
     if ($block['block_sections']) :
         if (count($block['block_sections']) === 1) :
             $theBlock = $block['block_sections'][0];
@@ -22,7 +26,7 @@
         else :
             $carouselId = "#block-image-carousel-" . $blockIndex; ?>
             <div id="<?php echo substr($carouselId, 1); ?>"
-                 class="carousel slide"
+                 class="carousel carousel-block carousel-block-image slide"
                  data-ride="carousel"
                  data-interval="false">
                 <p>

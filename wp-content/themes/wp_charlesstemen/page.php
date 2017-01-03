@@ -6,7 +6,7 @@ add_action('genesis_loop', 'bc_do_loop');
 function bc_do_loop ()
 {
     global $post; setup_postdata($post); ?>
-    <main id="single-project">
+    <main id="single-page">
         <?php include('lib/includes/layouts/layout-default.php'); ?>
     </main>
     <?php
