@@ -32,7 +32,8 @@ remove_action('genesis_after_header', 'genesis_do_subnav');
 
 add_action('genesis_header', 'dl_do_header');
 function dl_do_header()
-{ ?>
+{
+    $primaryNav = get_nav_menu('top_nav_primary'); ?>
     <header class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -46,14 +47,15 @@ function dl_do_header()
                     <img class="img-responsive" src="<?php echo getThemeImg('/logo.png'); ?>" alt="Charles Stemen">
                 </a>
             </div>
-            <nav id="main-nav" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">Photography</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <?php if ($primaryNav['items']) : ?>
+                <nav id="main-nav" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php foreach ($primaryNav['items'] as $item) : ?>
+                            <li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </nav>
+            <?php endif; ?>
         </div>
     </header>
     <section id="banner">
