@@ -33,7 +33,7 @@ remove_action('genesis_after_header', 'genesis_do_subnav');
 add_action('genesis_header', 'dl_do_header');
 function dl_do_header()
 { ?>
-    <header class="navbar navbar-fixed-top" role="navigation">
+    <header class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle">
@@ -42,11 +42,9 @@ function dl_do_header()
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1>
-                    <a class="navbar-brand" href="<?php get_bloginfo('url'); ?>">
-                        <img class="img-responsive" src="<?php echo getThemeImg('/logo.png'); ?>" alt="Charles Stemen">
-                    </a>
-                </h1>
+                <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
+                    <img class="img-responsive" src="<?php echo getThemeImg('/logo.png'); ?>" alt="Charles Stemen">
+                </a>
             </div>
             <nav id="main-nav" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -59,7 +57,8 @@ function dl_do_header()
         </div>
     </header>
     <section id="banner">
-        <h2><img src="http://placehold.it/2400x600" alt="Youth culture content creator - Since '92" class="img-responsive"></h2>
+        <h2 class="sr-only">Youth culture content creator - Since '92</h2>
+        <img src="http://placehold.it/2400x600" class="img-responsive">
     </section>
     <?php
 }
