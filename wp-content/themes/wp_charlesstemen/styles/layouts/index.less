@@ -1,0 +1,14 @@
+.project-gallery {
+  padding-top: 37px;
+
+  @media (min-width: @screen-sm-min) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+
+      > [class^="col-"] {
+        display: flex;
+      }
+    }
+  }
+}
