@@ -1,5 +1,30 @@
 jQuery(function ($) {
     $(document).ready(function () {
+        var $affixContainer = $('.affix-container');
+        var navbarHeight = $('.navbar-fixed-top').outerHeight;
+
+        function setAffixContainerSize () {
+            $affixContainer.css({
+                width: function () {
+                    return $(this).parent().width() + 'px';
+                }
+            });
+
+            $affixContainer.affix({
+                offset: {
+                    top: function () {
+                        return $affixContainer.parents('.layout-default').offset().top - navbarHeight;
+                    }
+                }
+            });
+        }
+
+        if ($affixContainer.length > 0) {
+            $(window)
+                .on('resize', setAffixContainerSize)
+                .trigger('resize');
+        }
+
         $('.wysiwyg-content').fitVids();
 
         $('.carousel-block')

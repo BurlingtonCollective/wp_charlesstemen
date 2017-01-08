@@ -6789,4 +6789,39 @@ article.project a {
     display: flex;
   }
 }
+.layout-default {
+  padding-top: 37px;
+}
+.layout-default .col-content .section-title {
+  font-family: inherit;
+  font-weight: normal;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.layout-default .col-content .section-title small,
+.layout-default .col-content .section-title .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+.layout-default .col-content .section-title small,
+.layout-default .col-content .section-title .small {
+  font-size: 75%;
+}
+.layout-default .col-content section:first-child .section-title {
+  margin-top: 0;
+}
+.layout-default .col-content section + section {
+  padding-top: 18.5px;
+}
+.layout-default .col-description h1 {
+  margin-top: 0;
+}
+.layout-default .affix-container.affix {
+  top: 113px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -61,10 +61,10 @@ function dl_do_header()
             <?php endif; ?>
         </div>
     </header>
-    <section id="banner">
-        <h2 class="sr-only">Youth culture content creator - Since '92</h2>
-        <img src="http://placehold.it/2400x600" class="img-responsive">
-    </section>
+<!--    <section id="banner">-->
+<!--        <h2 class="sr-only">Youth culture content creator - Since '92</h2>-->
+<!--        <img src="http://placehold.it/2400x600" class="img-responsive">-->
+<!--    </section>-->
     <?php
 }
 
