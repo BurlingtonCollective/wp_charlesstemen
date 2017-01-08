@@ -6791,6 +6791,7 @@ article.project a {
 }
 .layout-default {
   padding-top: 37px;
+  padding-bottom: 74px;
 }
 .layout-default .col-content .section-title {
   font-family: inherit;
