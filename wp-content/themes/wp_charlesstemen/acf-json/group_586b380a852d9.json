@@ -1,0 +1,323 @@
+{
+    "key": "group_586b380a852d9",
+    "title": "Section Wizard",
+    "fields": [
+        {
+            "key": "field_586b381730536",
+            "label": "Sections",
+            "name": "block_sections",
+            "type": "flexible_content",
+            "instructions": "Add sections by choosing section type below.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Add Section",
+            "min": "",
+            "max": "",
+            "layouts": [
+                {
+                    "key": "586b385b7922d",
+                    "name": "block_text",
+                    "label": "Text Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_586b38b030537",
+                            "label": "Heading",
+                            "name": "block_heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": "",
+                            "conditional_logic": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_586b38c830538",
+                            "label": "Copy",
+                            "name": "block_copy",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "586b38ec30539",
+                    "name": "block_image",
+                    "label": "Image Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_586b394c3053a",
+                            "label": "Heading",
+                            "name": "block_heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_586b3af36bf22",
+                            "label": "Copy",
+                            "name": "block_copy",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        },
+                        {
+                            "key": "field_586b399e3053b",
+                            "label": "Image(s)",
+                            "name": "block_sections",
+                            "type": "repeater",
+                            "instructions": "Will render in a slideshow format if more than one image is added.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_586b39fc3053c",
+                            "min": "",
+                            "max": "",
+                            "layout": "block",
+                            "button_label": "Add Image",
+                            "sub_fields": [
+                                {
+                                    "key": "field_586b39fc3053c",
+                                    "label": "Image",
+                                    "name": "block_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_586b3ad06bf21",
+                                    "label": "Copy",
+                                    "name": "block_copy",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "586b3b8687e63",
+                    "name": "block_video",
+                    "label": "Video Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_586b3b9c87e64",
+                            "label": "Heading",
+                            "name": "block_heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_586b3ba987e65",
+                            "label": "Copy",
+                            "name": "block_copy",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        },
+                        {
+                            "key": "field_586b3bd987e66",
+                            "label": "Video(s)",
+                            "name": "block_sections",
+                            "type": "repeater",
+                            "instructions": "Will render in a slideshow format if more than one video is added.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "block",
+                            "button_label": "Add Video",
+                            "sub_fields": [
+                                {
+                                    "key": "field_586b3c6887e67",
+                                    "label": "Video",
+                                    "name": "block_video",
+                                    "type": "wysiwyg",
+                                    "instructions": "Paste in vimeo embed here.  Try to remove\/disable any text from appearing.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "text",
+                                    "toolbar": "basic",
+                                    "media_upload": 0
+                                },
+                                {
+                                    "key": "field_586b3cbe87e68",
+                                    "label": "Copy",
+                                    "name": "block_copy",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "project"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            },
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "custom_fields",
+        "discussion",
+        "comments",
+        "format",
+        "page_attributes",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1483423715
+}

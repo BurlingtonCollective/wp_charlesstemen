@@ -1,0 +1,48 @@
+.project-gallery {
+  padding-top: 37px;
+
+  @media (min-width: @screen-sm-min) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+
+      > [class^="col-"] {
+        display: flex;
+      }
+    }
+  }
+}
+
+.layout-default {
+  @padding-top: 37px;
+  padding-top: @padding-top;
+
+  .col-content {
+    .section-title {
+      .h4();
+      font-weight: bold;
+    }
+
+    section {
+      &:first-child .section-title {
+        margin-top: 0;
+      }
+
+      + section {
+        padding-top: @padding-top / 2;
+      }
+    }
+  }
+
+  .col-description {
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  .affix-container {
+    &.affix {
+      top: @navbar-height + @padding-top;
+    }
+  }
+}
