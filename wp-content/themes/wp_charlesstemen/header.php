@@ -7,7 +7,10 @@ function dl_enqueue_scripts_styles() {
     wp_enqueue_style("brochure-styles", get_bloginfo('stylesheet_directory') . "/style.css");
 
     wp_enqueue_script('jquery');
-    wp_enqueue_script('bootstrap-js', $bowerDir . '/bootstrap/dist/js/bootstrap.min.js', array(), false, true);
+    wp_enqueue_script('bootstrap-js', $bowerDir . '/bootstrap/dist/js/bootstrap.min.js', array('jquery'), false, true);
+    wp_enqueue_script('fitvids-js', $bowerDir . '/fitvids/jquery.fitvids.js', array('jquery'), false, true);
+
+    wp_enqueue_script('main', get_bloginfo('stylesheet_directory') . '/js/main.js', array('jquery'), false, true);
 }
 
 do_action('genesis_doctype');
